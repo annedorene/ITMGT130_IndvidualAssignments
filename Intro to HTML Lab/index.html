@@ -1,0 +1,174 @@
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Space+Mono:400,700);
+
+body {
+  background: #FFFBE9; 
+  font-family: "Space Mono";
+  font-weight:400;
+  color: #555;
+}
+
+input, button {
+  font-family: "Space Mono";
+  font-size:1em;
+}
+
+a {text-decoration: none;color:inherit;}
+
+.container {
+  transition: all 0.2s cubic-bezier(.7,.2,.17,1);
+  box-shadow: 0 0 2px hsla(0,0%,0%,0.1); 
+  overflow:hidden;
+  position: relative;
+  margin:5% 10%;
+  height: 800px;
+  background: hsla(0,0%,100%,0.5);
+}
+
+.container:hover {
+  background: #E3CAA5;
+  transform: scale(1.02);
+  box-shadow: 0 46px 12px -16px hsla(0,0%,0%,0.05); 
+}
+
+.content {
+  padding: 5%;
+}
+
+h1 {color:#AD8B73; text-align: center;}
+h2 {color:#AD8B73; text-align: center; font-size: 2em;}
+p {color: #777; text-align: center;}
+
+
+.menu__btn {
+  float:left;
+  background: none;
+  border:none;
+  padding: 1em 0.5em;
+}
+
+.menu__label {
+  writing-mode: vertical-lr;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight:bold;
+  color: #AD8B73;
+}
+
+.menu__title {font-size:1.3em;}
+
+.menu__container {
+  transition: all 0.4s 0.3s cubic-bezier(.4,0,.17,1);
+  transform: translateX(-20em);
+  padding: 1em;
+  color:white;
+  font-size:1em;
+  top:0;
+  left:40%;
+  font-weight:bold;
+  text-align:left;
+  opacity:0;
+  visibility:hidden;
+  position:absolute;
+}
+
+.menu__list {
+  padding:0;
+  margin-top:2em;
+}
+
+.menu__item {
+  transition: all 0.2s;
+  list-style: none;
+}
+
+.menu__item:hover {
+  color:black;
+}
+
+.menu__item:before,
+.menu__item:last-child:after {
+  content:'';
+  display:block;
+  width:100px;
+  height:1px;
+  background: hsla(0,0%,100%,0.5);
+  margin: 1em 0;
+}
+
+.menu__bg-layer {
+  transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  border-radius:50%;
+  opacity:0;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  background: #AD8B73;
+  height:0;
+  width:0;
+}
+
+.menu__btn:hover .menu__container {
+  transform: translateX(0);
+  transition-delay:0;
+  width:100%;
+  heigth:100%;
+  visibility:visible;
+  opacity:1;
+}
+
+.menu__btn:hover .menu__bg-layer {
+  padding-bottom: 250%;
+  width:250%;
+  opacity:1;
+}
+
+.menu__btn:hover .menu__bg-layer-2 {
+  background: #CEAB93;
+}
+
+.menu__btn:hover .menu__bg-layer-1 {
+  transition-delay:0.2s;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+} 
+</style>
+      <div id="logo"> 
+	<img src="logo.png"> 
+</div> 
+<div class="container">
+  <h2>INDEX PAGE</h2>
+  <button class="menu__btn">
+    <span class="menu__label">MENU</span>
+    <div class="menu--hidden">
+      <div class="menu__bg-layer menu__bg-layer-2"></div>
+      <div class="menu__bg-layer menu__bg-layer-1"></div>
+      <div class="menu__container">
+        <span class="menu__title">Main menu</span>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="index.html">Main</a></li>
+          <li class="menu__item"><a href="aboutus.html">About Us</a></li>
+          <li class="menu__item"><a href="products.html">Products</a></li>
+          <li class="menu__item"><a href="branches.html">Branches</a></li>
+        </ul>
+      </div>
+    </div>
+  </button>
+
+    <div class="content">
+      <p> A coffeehouse, often known as a coffee shop or a café, is a kind of business that specializes in selling beverages made with coffee, including espresso, lattes, and cappuccinos. It's possible that some coffee shops sell cool beverages, such as iced coffee, iced tea, and other beverages that don't contain caffeine. In continental Europe, cafés provide alcoholic beverages. In addition to beverages, a coffee shop could also sell food, including bite-sized snacks, sandwiches, muffins, fruit, or pastries. Coffee shops may vary from locally owned and run establishments to major chains with locations all over the world. Some coffeehouse chains follow the franchise business model, and as a result, they have multiple locations spread out around the globe in a variety of nations. The word "café" may be used to refer to a coffeehouse; however, it is more often used to refer to a diner, a British café (also known as a "caff"), a "greasy spoon" (a tiny and affordable restaurant), a transit café, a teahouse or tea room, or any other informal eating and drinking location. A cafeteria is not the same as a coffeehouse; although the coffeehouse may have some similarities to a bar or restaurant, it is not the same as a cafeteria. It is really called nargile in Levantine Arabic, Greek, and Turkish, and it is offered in a lot of coffeehouses in the Middle East and in West Asian immigrant neighborhoods in the Western world. Shisha is flavored tobacco that is smoked via a hookah. Espresso bars are a sub-genre of coffeehouses that focus specifically on providing espresso and beverages that are derived from espresso. Coffeehouses, from a cultural point of view, primarily function as hubs of social interaction: a coffeehouse offers customers a space to socialize, speak, read, write, amuse one another, or pass the time, either on their own or in smaller groups. Coffeehouses that are equipped with wireless Internet connection have been more popular in recent years as a venue for customers to use their portable electronic devices, such as laptops and tablets, to access the Internet. For those who frequent it on a regular basis, a coffeehouse might function as an unofficial club. Coffeehouses have been known to feature singer-songwriter concerts ever since the Beatnik period of the 1950s and the folk music movement of the 1960s. These performances normally take place in the evening.</p>
+      </div>
+    </div>
+    
+    <footer>  
+     <p>Author: Anne Dorene Chua</p>
+     <p><a href="mailto:hege@example.com">dorene.chua@obf.ateneo.edu</a></p>
+   </footer>
